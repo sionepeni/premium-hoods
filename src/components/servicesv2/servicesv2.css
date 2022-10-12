@@ -80,66 +80,66 @@
     /* Main file - Servicesv2 */
 
 .servicev2{
-    width: 287vw;
-    height: 152vh;
+    width: 100vw;
+    height: fit-content;
     margin: auto;
     /* background-color: rgba(0, 0, 0, 0.863); */
     background-color: rgba(0, 0, 0, 0.71);
 }
 .servicev2 > h1{
-    padding: 3rem 0 0 0;
+    padding: 1.5rem 0 0 0;
     text-align: center;
     color: white;
     width: fit-content;
     margin: auto;
     text-decoration: underline;
-    font-size: 46px;
+    font-size: 32px;
 }
 .servicev2-body{
     margin-top: 1rem;
     display: flex;
-    width: 285vw;
+    width: 100vw;
     display: flex;
     flex-direction: column;
 }
 .servicev2-side-bar{
-    padding-left: .5rem;
+    padding-left: 0rem;
     border-right: none;
     width: 98%;
-    height: fit-content;
     padding-right: .5rem;
+    padding-bottom: 2rem;
 }
 .servicev2-content{
-    width: 100%;
+    width: 100vw;
 }
 .full-bleed{
-    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.863);
-    clip-path: inset(0 -100vmax);
+    box-shadow: none;
+    clip-path: none;
 }
 
 /* ServiceSideBar */
 
 .service-side-bar{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
 }
 .service-side-bar-divs{
     border: 1px solid white;
     text-align: center;
     padding: .8rem 0.5rem;
-    margin: 1rem;
+    margin: .5rem;
     color: white;
     border-radius: 5px;
-    font-size: 28px;
-    transition-duration: 1s;
+    font-size: 22px;
+    transition-duration: 0s;
     background-color: rgba(0, 0, 0, 0.644);
 }
 .service-side-bar-divs:hover{
     cursor: pointer;
     background-color: rgb(104, 104, 104);
     border: 1px solid red;
-    transition-duration: 1s;
+    transition-duration: 0s;
 }
 .service-side-bar-selected{
     cursor: pointer;
@@ -147,10 +147,10 @@
     border: 1px solid red;
     text-align: center;
     padding: .8rem 0.5rem;
-    margin: 1rem;
+    margin: .5rem;
     color: white;
     border-radius: 5px;
-    font-size: 28px;
+    font-size: 22px;
 }
 
 /* ServiceContent */
@@ -159,8 +159,10 @@
     display: flex;
 }
 .service-conetnt-body{
-    margin-left: 0;
-    padding-bottom: 0;
-    padding: 0 1.5rem;
+    width: 100vw;
+    margin-left: 0rem;
+    padding-bottom: 0rem;
 }
 }
+
+@media only screen and (max-width : 375px){}
