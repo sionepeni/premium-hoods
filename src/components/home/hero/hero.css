@@ -65,13 +65,13 @@
     border-bottom: 3px solid white;
     position: relative;
     width: 100vw;
-    height: 266vh;
+    height: 280vh;
 }
 
 .hero-opacity{
     background-color: rgba(0, 0, 0, 0.71);
     width: 100vw;
-    height: 266vh;
+    height: 280vh;
     z-index: 5;
 }
 
@@ -81,9 +81,9 @@
 
 .hero-text{
     position: absolute;
-    top: 70rem;
+    top: 75rem;
     left: 13.2rem;
-    height: 250vh;
+    height: 270vh;
     width: 90vw;
 }
 
