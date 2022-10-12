@@ -2,9 +2,11 @@ import "./quote.css"
 import { useState } from "react"
 import { send } from "emailjs-com"
 import { BsChevronDown, BsChevronUp } from "react-icons/bs"
+import { BsXLg } from "react-icons/bs"
 
 export default function Quote() {
     const [showServices, setShowServices] = useState(false)
+    const [quoteSuccess, setQuoteSuccess] = useState(true)
     const [selectedServices, setSelectedServices] = useState("Service")
     const [toSend, setToSend] = useState({
         first_name: "",
@@ -19,6 +21,7 @@ export default function Quote() {
     const onSubmit = (e) => {
         e.preventDefault()
         send("service_hyqo7yi", "template_70pdcqs", toSend, "htePApkmF0hMkDqvD")
+        setQuoteSuccess(true)
             .then((response) => {
                 console.log("SUCCESS!", response.status, response.text)
             })
@@ -38,6 +41,23 @@ export default function Quote() {
     return (
         <>
             <div className="quote full-bleed-quote">
+                {quoteSuccess ? (
+                    <div className="success-modal">
+                        <span className="success-modal-x">
+                            <BsXLg
+                                onClick={() => setQuoteSuccess(false)}
+                                color="red"
+                                size={30}
+                            />
+                        </span>
+                        <h2 className="success-modal-text">
+                            Thank you for your interest in our product or
+                            service. Our team will be in contact shortly.
+                        </h2>
+                    </div>
+                ) : (
+                    ""
+                )}
                 <h1>GET A FREE QUOTE</h1>
                 <form onSubmit={onSubmit} className="quote-form">
                     <input
