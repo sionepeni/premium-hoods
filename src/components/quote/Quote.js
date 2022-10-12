@@ -6,7 +6,7 @@ import { BsXLg } from "react-icons/bs"
 
 export default function Quote() {
     const [showServices, setShowServices] = useState(false)
-    const [quoteSuccess, setQuoteSuccess] = useState(true)
+    const [quoteSuccess, setQuoteSuccess] = useState(false)
     const [selectedServices, setSelectedServices] = useState("Service")
     const [toSend, setToSend] = useState({
         first_name: "",
