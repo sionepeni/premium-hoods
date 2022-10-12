@@ -38,7 +38,7 @@ export default function Header({ pageSelected }) {
                     ></img>
                 </span>
                 <span className="mobile-menu-btn" onClick={() => setMobileView(!mobileView)}>
-                    {mobileView ? <BsXLg color="white" size={60} /> : <GiHamburgerMenu color="white" size={60} /> }
+                    {mobileView ? <BsXLg color="white" size={40} /> : <GiHamburgerMenu color="white" size={40} /> }
                 </span>
                 <div className={mobileView ? "header-ul" : "header-ul mobile-btns"}>
                     <ul className="header-ul">

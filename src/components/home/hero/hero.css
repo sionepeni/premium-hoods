@@ -60,18 +60,18 @@
     font-size: 20px;
 }
 
-@media screen and (width: 412px){
+@media only screen and (max-width : 425px){
     .hero{
     border-bottom: 3px solid white;
     position: relative;
-    width: 1180px;
-    height: 160vh;
+    width: 100vw;
+    height: 180vh;
 }
 
 .hero-opacity{
     background-color: rgba(0, 0, 0, 0.71);
-    width: 1180px;
-    height: 160vh;
+    width: 100vw;
+    height: 180vh;
     z-index: 5;
 }
 
@@ -81,15 +81,16 @@
 
 .hero-text{
     position: absolute;
-    top: 45rem;
-    left: 36rem;
-    height: 140vh;
+    top: 68rem;
+    left: 13.2rem;
+    height: 174vh;
+    width: 90vw;
 }
 
 .hero-text > h1{
     color: white;
     padding: 0 2rem;
-    font-size: 50px;
+    font-size: 32px;
     text-decoration: underline;
     text-align: center;
 }
@@ -97,14 +98,14 @@
 .hero-text > p{
     color: white;
     padding: 0 2rem;
-    font-size: 38px;
+    font-size: 22px;
     line-height: 3rem;
 }
 
 .hero-text > ul{
     color: white;
     padding: 0 2rem;
-    font-size: 34px;
+    font-size: 22px;
     line-height: 1.8rem;
     list-style: none;
     line-height: 3rem;
@@ -116,7 +117,69 @@
 
 .hero-list-text{
     color: rgb(203, 10, 10);
-    font-size: 34px;
+    font-size: 22px;
+    line-height: 3rem;
+}
+}
+
+@media only screen and (max-width : 375px){
+    .hero{
+    border-bottom: 3px solid white;
+    position: relative;
+    width: 100vw;
+    height: 192vh;
+}
+
+.hero-opacity{
+    background-color: rgba(0, 0, 0, 0.71);
+    width: 100vw;
+    height: 192vh;
+    z-index: 5;
+}
+
+.hero-img{
+    display: none;
+}
+
+.hero-text{
+    position: absolute;
+    top: 72rem;
+    left: 11.5rem;
+    height: 186vh;
+    width: 90vw;
+}
+
+.hero-text > h1{
+    color: white;
+    padding: 0 2rem;
+    font-size: 32px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.hero-text > p{
+    color: white;
+    padding: 0 2rem;
+    font-size: 22px;
+    line-height: 3rem;
+}
+
+.hero-text > ul{
+    color: white;
+    padding: 0 2rem;
+    font-size: 22px;
+    line-height: 1.8rem;
+    list-style: none;
+    line-height: 3rem;
+}
+
+.premium-hood-text{
+    color: red;
+}
+
+.hero-list-text{
+    color: rgb(203, 10, 10);
+    font-size: 22px;
     line-height: 3rem;
 }
 }

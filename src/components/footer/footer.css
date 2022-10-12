@@ -13,7 +13,7 @@
     justify-content: center;
 }
 
-@media screen and (width: 412px){
+@media only screen and (max-width : 425px){
     .footer{
     background-color: black;
     color: white;
@@ -21,7 +21,7 @@
     border-top: 3px solid white;
     position: static;
     bottom: 0;
-    width: 287vw;
+    width: 100vw;
 }
     .footer > p{
     display: flex;

@@ -129,8 +129,135 @@
     display: none;
 }
 
-@media screen and (width: 412px){
-    .quote-submit{
+@media only screen and (max-width : 425px){
+    /* main section */
+
+.quote{
+    color: white;
+    width: 100vw;
+    margin: 0;
+    padding: 1rem 0;
+    background-color: rgba(0, 0, 0, 0.61);
+}
+
+.quote > h1{
+    text-align: center;
+    font-size: 32px;
+}
+
+.quote-form{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+/* background sides */
+
+.full-bleed-quote{
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.61);
+    clip-path: inset(0 -100vmax);
+}
+
+/* Form inputs */
+
+.general-form{
+    font-size: 20px;
+    padding: .5rem;
+    border: 2px solid black;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 1rem;
+    width: 20rem;
+    border-radius: 5px;
+    color: red;
+}
+
+.general-form::placeholder{
+    color: red;
+}
+
+.general-form:focus{
+    border: 1px solid red;
+}
+
+.comment{
+    font-size: 20px;
+    padding: .5rem;
+    border: 2px solid black;
+    margin: 1rem;
+    width: 20rem;
+    height: 8rem;
+    text-align: calc(-50%);
+    border-radius: 5px;
+    color: red;
+}
+
+.comment::placeholder{
+    color: red;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.service{
+    color: red;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    width: 20rem;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    cursor: pointer;
+    position: relative;
+    background-color: white;
+    border-radius: 5px;
+}
+
+
+.service-list{
+    color: black;
+    position: absolute;
+    top: 1.5rem;
+    left: 0;
+    border: 2px solid black;
+    background-color: white;
+    padding: 0;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.quote-li{
+    list-style: none;
+    width: 100%;
+    text-align: center;
+}
+
+.quote-li:hover{
     background-color: red;
+    color: white;
+}
+
+.quote-submit{
+    width: 21.2rem;
+    height: 4rem;
+    border: 2px solid black;
+    font-size: 20px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 1rem;
+    background-color: red;
+    cursor: pointer;
+    transition-duration: .5s;
+    border-radius: 5px;
+}
+
+.quote-submit:hover{
+    background-color: red;
+    font-size: 24px;
+    transition-duration: .5s;
+}
+
+.hidden{
+    display: none;
 }
 }

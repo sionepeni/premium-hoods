@@ -17,15 +17,31 @@
     color: white;
 }
 
-@media screen and (width: 412px){
+@media only screen and (max-width : 425px){
     .about-services-main{
-    width: 287vw;
+    width: 100vw;
     display: flex;
     flex-direction: row;
     padding-top: 6rem;
 }
 
 .about-services-h1{
-    font-size: 50px;
+    font-size: 32px;
+    padding-top: 1.5rem;
+}
+}
+
+@media only screen and (max-width : 375px){
+    .about-services-main{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+.about-services-h1{
+    text-align: center;
+    font-size: 32px;
+    position: relative;
 }
 }
