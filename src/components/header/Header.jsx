@@ -3,7 +3,6 @@ import "./header.css"
 import { useState } from "react"
 import { GiHamburgerMenu } from "react-icons/gi";
 import { BsXLg } from "react-icons/bs";
-import { Divide as Hamburger } from 'hamburger-react'
 import { Link } from "react-router-dom"
 
 export default function Header({ pageSelected }) {

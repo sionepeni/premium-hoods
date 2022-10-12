@@ -1,7 +1,7 @@
 import Home from "./pages/Home"
 import Services from "./pages/Services"
-import AboutUs from "./pages/AboutUs"
-import ContactUs from "./pages/ContactUs"
+// import AboutUs from "./pages/AboutUs"
+// import ContactUs from "./pages/ContactUs"
 import "./App.css"
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 
