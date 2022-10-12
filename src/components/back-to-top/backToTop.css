@@ -1,0 +1,11 @@
+.back-to-top{
+    border: 1px solid red;
+    width: fit-content;
+    height: fit-content;
+    z-index: 20;
+    background-image: linear-gradient(grey, black);
+    border-radius: 50%;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+}
