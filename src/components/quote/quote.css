@@ -142,7 +142,7 @@
 .success-modal-x{
     padding: .5rem .5rem 0 0;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 .success-modal-text{
