@@ -51,8 +51,8 @@ export default function Quote() {
                             />
                         </span>
                         <h2 className="success-modal-text">
-                            Thank you for your interest in our product or
-                            service. Our team will be in contact shortly.
+                            Thank you for your interest in our services. Our
+                            team will be in contact with you shortly.
                         </h2>
                     </div>
                 ) : (
@@ -131,7 +131,7 @@ export default function Quote() {
                                 className="quote-li"
                                 onClick={serviceChange}
                             >
-                                Canopy Cleaning
+                                Flue Cleaning
                             </li>
                             <li
                                 id="service"

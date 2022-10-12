@@ -97,7 +97,7 @@
 }
 }
 
-@media only screen and (max-width : 375px){
+@media only screen and (max-width : 390px){
     .service-card-main{
     display: flex;
     flex-direction: column;
